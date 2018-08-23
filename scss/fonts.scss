@@ -1,0 +1,44 @@
+/* Подключение шрифтов. */
+$svg: false;
+$truetupe: true;
+@each $s in Exo Thin, Trebuchet MS Regular, Trebuchet MS Bold/* Список подключаемых шрифтов. */
+{
+    @font-face
+    {
+        font-family:'#{$s}';
+        
+        @if $svg == true and $truetupe == false {
+        src: url('../fonts/#{$s}.eot?iefix') format('eot'),
+        url('../fonts/#{$s}.woff') format('woff'),
+        url('../fonts/#{$s}.svg#webfont') format('svg');       
+        font-weight: normal;
+        font-style: normal;
+        }
+    
+        @if $svg == false and $truetupe == false {
+        src: url('../fonts/#{$s}.eot?iefix') format('eot'),
+        url('../fonts/#{$s}.woff') format('woff');     
+        font-weight: normal;
+        font-style: normal;
+        }
+    
+        @if $svg == false and $truetupe == true {
+        src: url('../fonts/#{$s}.otf') format('opentype'),
+        url('../fonts/#{$s}.ttf') format('truetype');     
+        font-weight: normal;
+        font-style: normal;
+        }
+    
+        @if $svg == true and $truetupe == true {
+        src: url('../fonts/#{$s}.eot?iefix') format('eot'),
+        url('../fonts/#{$s}.woff') format('woff'),
+        url('../fonts/#{$s}.ttf') format('truetype'),
+        url('../fonts/#{$s}.svg#webfont') format('svg');       
+        font-weight: normal;
+        font-style: normal;
+        }
+    
+    }
+    
+}
+/* Подключение шрифтов. */

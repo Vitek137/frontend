@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Подключение шрифтов. */
+@font-face {
+  font-family: "Exo Thin";
+  src: url("../fonts/Exo Thin.otf") format("opentype"), url("../fonts/Exo Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Trebuchet MS Regular";
+  src: url("../fonts/Trebuchet MS Regular.otf") format("opentype"), url("../fonts/Trebuchet MS Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Trebuchet MS Bold";
+  src: url("../fonts/Trebuchet MS Bold.otf") format("opentype"), url("../fonts/Trebuchet MS Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* Подключение шрифтов. */
+
+/*# sourceMappingURL=fonts.css.map */

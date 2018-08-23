@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* Общие стили */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Exo Thin, sans-serif;
+  background-image: url(../img/gradient-top.png), url(../img/fon-body.png);
+  background-repeat: repeat-x, repeat;
+  background-size: auto, cover;
+  background-position: top center; }
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center; }
+
+h2 {
+  font-size: 24px;
+  color: #000; }
+
+/* Общие стили */
+/* Header */
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin-top: 12%;
+  text-align: center;
+  padding-bottom: 100px; }
+
+.left {
+  margin-right: 38px;
+  margin-left: 38px; }
+
+.center {
+  margin-right: 38px;
+  margin-left: 38px; }
+
+.right {
+  margin-right: 38px;
+  margin-left: 38px; }
+
+.box, .box-off, .box-on {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 320px;
+  height: 520px;
+  font-family: Trebuchet MS Regular, sans-serif;
+  text-align: center;
+  z-index: 2; }
+  .box h2, .box-off h2, .box-on h2 {
+    display: block;
+    position: relative;
+    width: 80%;
+    text-align: left;
+    margin-top: 13px;
+    margin-left: 15%;
+    font-family: Trebuchet MS Bold, sans-serif;
+    line-height: 40px;
+    z-index: 3; }
+    .box h2 span, .box-off h2 span, .box-on h2 span {
+      display: block;
+      font-size: 48px;
+      margin-left: -1%; }
+  .box p, .box-off p, .box-on p {
+    display: block;
+    position: absolute;
+    width: 99%;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    top: 480px;
+    left: 0;
+    z-index: 3; }
+    .box p span, .box-off p span, .box-on p span {
+      color: #1698d9; }
+    .box p a, .box-off p a, .box-on p a {
+      font-family: TrebucMS Bold, sans-serif;
+      font-size: 13px;
+      color: #1698d9;
+      text-decoration: underline;
+      -webkit-text-decoration-style: dashed;
+              text-decoration-style: dashed;
+      cursor: pointer;
+      margin-left: 4px; }
+    .box p a:hover, .box-off p a:hover, .box-on p a:hover {
+      text-decoration: none; }
+  .box span.block, .box-off span.block, .box-on span.block {
+    display: inline-block;
+    position: absolute;
+    vertical-align: top;
+    width: 100%;
+    height: 480px;
+    margin: 0;
+    background-image: url(../img/fon-box.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    overflow: hidden;
+    border-radius: 50px 11px 11px 11px;
+    top: 0;
+    left: 0; }
+    .box span.block img.foto, .box-off span.block img.foto, .box-on span.block img.foto {
+      display: block;
+      position: absolute;
+      width: 116%;
+      height: auto;
+      top: 206px;
+      left: -25px; }
+    .box span.block img.ramka, .box-off span.block img.ramka, .box-on span.block img.ramka {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0; }
+  .box span.block:hover, .box-off span.block:hover, .box-on span.block:hover {
+    cursor: pointer; }
+  .box span.block::before, .box-off span.block::before, .box-on span.block::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 320px;
+    height: 480px;
+    background-image: url(../img/ramka.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    top: 0;
+    left: 0;
+    z-index: 3; }
+  .box span.massa, .box-off span.massa, .box-on span.massa {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1698d9;
+    top: 384px;
+    right: 15px;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 100;
+    color: #fff; }
+    .box span.massa strong, .box-off span.massa strong, .box-on span.massa strong {
+      display: block;
+      font-size: 42px;
+      font-weight: 100;
+      color: #fff;
+      margin-top: 15px; }
+  .box span.top, .box-off span.top, .box-on span.top {
+    font-size: 16px;
+    color: #666666;
+    display: block;
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 15%;
+    z-index: 3; }
+  .box span.bonus, .box-off span.bonus, .box-on span.bonus {
+    font-size: 14px;
+    color: #666666;
+    display: block;
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-top: -11px;
+    text-align: left;
+    margin-left: 15%;
+    z-index: 3; }
+    .box span.bonus strong, .box-off span.bonus strong, .box-on span.bonus strong {
+      font-family: Trebuchet MS Bold, sans-serif; }
+  .box p.off, .box-off p.off, .box-on p.off {
+    display: none; }
+
+.box-off span.block {
+  background-image: url(../img/fon-off.png); }
+.box-off span.block::before {
+  background-image: url(../img/ramka-off.png); }
+.box-off span.massa {
+  background-color: #d91667; }
+.box-off p span {
+  color: #fff; }
+.box-off p a {
+  display: none; }
+
+.box-on h2 {
+  color: #b3b3b3; }
+.box-on p {
+  color: #ffff66; }
+  .box-on p span {
+    color: #ffff66; }
+  .box-on p a {
+    display: none; }
+.box-on span.block {
+  background-image: url(../img/fon-on.png); }
+  .box-on span.block img.foto {
+    opacity: 0.5; }
+.box-on span.block:hover {
+  cursor: no-drop; }
+.box-on span.block::before {
+  background-image: url(../img/ramka-on.png); }
+.box-on span.massa {
+  background-color: #b3b3b3;
+  color: #fff; }
+  .box-on span.massa strong {
+    display: block;
+    font-size: 42px;
+    font-weight: 100;
+    color: #fff;
+    margin-top: 15px; }
+.box-on span.top {
+  color: #b3b3b3; }
+.box-on span.bonus {
+  color: #b3b3b3; }
+.box-on p.on {
+  display: none; }
+.box-on p.off {
+  display: block; }
+
+/* Основной контент. */
+/* Футер. */
+footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  background-image: url(../img/gradient-bottom.png);
+  background-repeat: repeat-x;
+  background-size: auto;
+  background-position: bottom center;
+  left: 0;
+  bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */
